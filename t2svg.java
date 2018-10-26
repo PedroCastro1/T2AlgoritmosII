@@ -1,7 +1,7 @@
-import java.util.*;
+import java.util.Scanner;
 public class t2svg{
 
-  public static Scanner in = new Scanner(System.in);
+  private static Scanner in = new Scanner(System.in);
 
   public static void svgline (int x1, int y1, int x2, int y2) {
     System.out.printf(" <polyline points=\"%d,%d %d,%d\"/>\n", x1, y1, x2, y2);
@@ -45,7 +45,7 @@ public class t2svg{
       if ((t & N) == N) svgline(c, l , c + 1, l); 
       if ((t & S) == S) svgline(c, l + 1, c + 1, l + 1);
       if ((t & O) == O) svgline(c , l , c , l + 1); 
-      if ((t & L) == L) svgline(c + 1, l , c + 1, l + 1);;
+      if ((t & L) == L) svgline(c + 1, l , c + 1, l + 1);
 
       c++;
       if (c == w) {
@@ -69,12 +69,12 @@ public class t2svg{
     process(w, h);
 
   // Ex: gerando circulos no labirinto
-    System.out.println(" <circle cx=\"11.5\" cy=\"0.5\" r=\"0.2\" stroke=\"red\" fill=\"red\" />");
-    System.out.println(" <circle cx=\"12.5\" cy=\"0.5\" r=\"0.2\" stroke=\"red\" fill=\"red\" />");
-    System.out.println(" <circle cx=\"13.5\" cy=\"0.5\" r=\"0.2\" stroke=\"red\" fill=\"red\" />");
+    System.out.println("<circle cx=\"11.5\" cy=\"0.5\" r=\"0.2\" stroke=\"red\" fill=\"red\" />");
+    System.out.println("<circle cx=\"12.5\" cy=\"0.5\" r=\"0.2\" stroke=\"red\" fill=\"red\" />");
+    System.out.println("<circle cx=\"13.5\" cy=\"0.5\" r=\"0.2\" stroke=\"red\" fill=\"red\" />");
 
   // Finaliza
     System.out.print("</g>");
     System.out.print("</svg>");
   }
-}
+} 
