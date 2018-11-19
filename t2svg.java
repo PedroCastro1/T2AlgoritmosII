@@ -20,6 +20,7 @@ public class t2svg{
     while(true) {
 
       if (!in.hasNext()) return; 
+
       char t = in.next().charAt(0);
 
       switch (t) {
@@ -62,9 +63,9 @@ public class t2svg{
     h = in.nextInt();
     w = in.nextInt();
 
-    System.out.println( "<?xml version=\"1.0\" standalone=\"no\"?>" );
-    System.out.printf ( "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"%dcm\" height=\"%dcm\" viewBox=\"-0.1 -0.1 %f %f\">", w, h, w+0.2, h+0.2 );
-    System.out.println( "<g style=\"stroke-width:.1; stroke:black; stroke-linejoin:miter; stroke-linecap:butt; \">" );
+    System.out.println("<?xml version=\"1.0\" standalone=\"no\"?>");
+    System.out.printf ("<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"%dcm\" height=\"%dcm\" viewBox=\"-0.1 -0.1 %f %f\">", w, h, w+0.2, h+0.2);
+    System.out.println("<g style=\"stroke-width:.1; stroke:black; stroke-linejoin:miter; stroke-linecap:butt; \">");
 
     process(w, h);
 
@@ -72,6 +73,7 @@ public class t2svg{
     System.out.println("<circle cx=\"11.5\" cy=\"0.5\" r=\"0.2\" stroke=\"red\" fill=\"red\" />");
     System.out.println("<circle cx=\"12.5\" cy=\"0.5\" r=\"0.2\" stroke=\"red\" fill=\"red\" />");
     System.out.println("<circle cx=\"13.5\" cy=\"0.5\" r=\"0.2\" stroke=\"red\" fill=\"red\" />");
+    
 
   // Finaliza
     System.out.print("</g>");
