@@ -1,3 +1,0 @@
-1.[] Achar o inicio do labirito.
-2.[] Graph search.
-3.[x] Transformar characteres em binário.
